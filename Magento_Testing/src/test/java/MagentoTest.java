@@ -1,5 +1,6 @@
 
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
 
@@ -8,7 +9,7 @@ public class MagentoTest
 	@Test
 	public void login() throws InterruptedException 
 	{ 
-		ChromeDriver cd = new ChromeDriver();
+		FirefoxDriver cd = new FirefoxDriver();
 		cd.manage().window().maximize();		
 		cd.get("https://www.magento.com");
 		Welcome w = new Welcome(cd);
