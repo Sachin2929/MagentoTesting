@@ -9,7 +9,7 @@ public class MagentoTest
 	@Test
 	public void login() throws InterruptedException 
 	{ 
-		FirefoxDriver cd = new FirefoxDriver();
+		ChromeDriver cd = new ChromeDriver();
 		cd.manage().window().maximize();		
 		cd.get("https://www.magento.com");
 		Welcome w = new Welcome(cd);
