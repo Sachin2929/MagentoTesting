@@ -17,7 +17,7 @@ public class MagentoTest
 		cd.get("https://www.magento.com");
 		Welcome w = new Welcome(cd);
 		w.clickOnMyAcc();
-//		Thread.sleep(5000);		
+		Thread.sleep(5000);		
 		
 		Login l = new Login(cd);
 		l.clickOnSend();		
