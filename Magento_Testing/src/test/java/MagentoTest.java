@@ -1,4 +1,6 @@
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
@@ -10,7 +12,8 @@ public class MagentoTest
 	public void login() throws InterruptedException 
 	{ 
 		ChromeDriver cd = new ChromeDriver();
-		cd.manage().window().maximize();		
+		cd.manage().window().maximize();	
+		cd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		cd.get("https://www.magento.com");
 		Welcome w = new Welcome(cd);
 		w.clickOnMyAcc();
