@@ -11,8 +11,8 @@ public class MagentoTest
 	@Test
 	public void login() throws InterruptedException 
 	{ 
-		ChromeDriver cd = new ChromeDriver();
-		cd.manage().window().maximize();	
+		ChromeDriver cd = new ChromeDriver();		
+//		cd.manage().window().maximize();	
 		cd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		cd.get("https://www.magento.com");
 		Welcome w = new Welcome(cd);
