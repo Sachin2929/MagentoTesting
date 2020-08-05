@@ -20,9 +20,9 @@ public class MagentoTest
 		l.clickOnSend();		
 		Thread.sleep(5000);		
 				
-		Home h = new Home(cd);
-		h.clickOnLogout();
-		Thread.sleep(5000);
+//		Home h = new Home(cd);
+//		h.clickOnLogout();
+//		Thread.sleep(5000);
 		cd.quit();
 	}
 
